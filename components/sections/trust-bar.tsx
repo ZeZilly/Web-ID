@@ -2,20 +2,20 @@
 
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
-import { Shield, Award, Globe2, Briefcase } from "lucide-react";
+import { Shield, Award, Globe2, MapPin } from "lucide-react";
 
 const trustItems = [
   { icon: Shield, key: "certified" },
   { icon: Award, key: "experience" },
   { icon: Globe2, key: "languages" },
-  { icon: Briefcase, key: "clients" },
+  { icon: MapPin, key: "location" },
 ];
 
 export default function TrustBar() {
   const t = useTranslations("trustBar");
 
   return (
-    <section className="relative py-12 border-y border-border/50">
+    <section className="relative py-12 border-y border-border/50" aria-label="Trust indicators">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -34,7 +34,7 @@ export default function TrustBar() {
               className="flex flex-col items-center text-center gap-3 group"
             >
               <div className="p-3 rounded-xl border border-border/50 bg-card/50 transition-all duration-300 group-hover:border-primary/30 group-hover:bg-primary/5">
-                <item.icon className="h-6 w-6 text-primary" />
+                <item.icon className="h-6 w-6 text-primary" aria-hidden="true" />
               </div>
               <div>
                 <p className="text-2xl font-bold text-foreground">

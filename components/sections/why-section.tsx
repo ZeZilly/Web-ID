@@ -4,16 +4,16 @@ import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import {
   Lightbulb,
-  Users,
-  Zap,
+  MessageSquare,
+  Shield,
   Target,
   CheckCircle2,
 } from "lucide-react";
 
 const reasons = [
   { icon: Lightbulb, key: "expertise" },
-  { icon: Users, key: "communication" },
-  { icon: Zap, key: "efficiency" },
+  { icon: MessageSquare, key: "communication" },
+  { icon: Shield, key: "confidentiality" },
   { icon: Target, key: "precision" },
 ];
 
@@ -53,7 +53,7 @@ export default function WhySection() {
             >
               <div className="flex items-start gap-4">
                 <div className="shrink-0 p-3 rounded-xl bg-primary/10 text-primary group-hover:bg-primary/20 transition-colors duration-300">
-                  <reason.icon className="h-6 w-6" />
+                  <reason.icon className="h-6 w-6" aria-hidden="true" />
                 </div>
                 <div className="flex-1">
                   <h3 className="text-xl font-semibold text-foreground mb-2">
@@ -68,7 +68,7 @@ export default function WhySection() {
                         key={i}
                         className="flex items-center gap-2 text-sm text-muted-foreground"
                       >
-                        <CheckCircle2 className="h-4 w-4 text-primary shrink-0" />
+                        <CheckCircle2 className="h-4 w-4 text-primary shrink-0" aria-hidden="true" />
                         <span>{t(`reasons.${reason.key}.points.${i}`)}</span>
                       </li>
                     ))}

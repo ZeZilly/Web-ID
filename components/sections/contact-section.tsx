@@ -3,14 +3,12 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
-import { Mail, MapPin, Clock, Send, CheckCircle2 } from "lucide-react";
+import { Mail, MapPin, Clock, Send, CheckCircle2, Lock } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export default function ContactSection() {
   const t = useTranslations("contact");
-  const [formState, setFormState] = useState<"idle" | "submitting" | "success">(
-    "idle"
-  );
+  const [formState, setFormState] = useState<"idle" | "submitting" | "success">("idle");
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -33,8 +31,8 @@ export default function ContactSection() {
 
   const contactInfo = [
     { icon: Mail, key: "email", value: "contact@multilingual.no" },
-    { icon: MapPin, key: "location", value: "Norway" },
-    { icon: Clock, key: "response", value: "24-48h" },
+    { icon: MapPin, key: "location", value: "Trondheim, Norway" },
+    { icon: Clock, key: "response", value: "24-48 hours" },
   ];
 
   return (
@@ -71,7 +69,7 @@ export default function ContactSection() {
               {contactInfo.map((item) => (
                 <div key={item.key} className="flex items-start gap-4">
                   <div className="p-3 rounded-xl bg-primary/10 text-primary shrink-0">
-                    <item.icon className="h-5 w-5" />
+                    <item.icon className="h-5 w-5" aria-hidden="true" />
                   </div>
                   <div>
                     <p className="font-medium text-foreground">
@@ -91,10 +89,10 @@ export default function ContactSection() {
                 {t("availability.description")}
               </p>
               <div className="flex items-center gap-2">
-                <div className="relative flex h-3 w-3">
+                <span className="relative flex h-3 w-3" aria-hidden="true">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
                   <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500" />
-                </div>
+                </span>
                 <span className="text-sm text-green-400 font-medium">
                   {t("availability.status")}
                 </span>
@@ -120,16 +118,16 @@ export default function ContactSection() {
                     htmlFor="name"
                     className="block text-sm font-medium text-foreground mb-2"
                   >
-                    {t("form.name")}
+                    {t("form.name")} <span className="text-primary">*</span>
                   </label>
                   <input
                     type="text"
                     id="name"
+                    name="name"
                     value={formData.name}
-                    onChange={(e) =>
-                      setFormData({ ...formData, name: e.target.value })
-                    }
+                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     required
+                    autoComplete="name"
                     className="w-full px-4 py-3 rounded-lg border border-border/50 bg-background/50 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary/50 transition-all duration-300"
                     placeholder={t("form.namePlaceholder")}
                   />
@@ -139,63 +137,61 @@ export default function ContactSection() {
                     htmlFor="email"
                     className="block text-sm font-medium text-foreground mb-2"
                   >
-                    {t("form.email")}
+                    {t("form.email")} <span className="text-primary">*</span>
                   </label>
                   <input
                     type="email"
                     id="email"
+                    name="email"
                     value={formData.email}
-                    onChange={(e) =>
-                      setFormData({ ...formData, email: e.target.value })
-                    }
+                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     required
+                    autoComplete="email"
                     className="w-full px-4 py-3 rounded-lg border border-border/50 bg-background/50 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary/50 transition-all duration-300"
                     placeholder={t("form.emailPlaceholder")}
                   />
                 </div>
               </div>
 
-              <div className="mb-6">
-                <label
-                  htmlFor="company"
-                  className="block text-sm font-medium text-foreground mb-2"
-                >
-                  {t("form.company")}
-                </label>
-                <input
-                  type="text"
-                  id="company"
-                  value={formData.company}
-                  onChange={(e) =>
-                    setFormData({ ...formData, company: e.target.value })
-                  }
-                  className="w-full px-4 py-3 rounded-lg border border-border/50 bg-background/50 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary/50 transition-all duration-300"
-                  placeholder={t("form.companyPlaceholder")}
-                />
-              </div>
-
-              <div className="mb-6">
-                <label
-                  htmlFor="type"
-                  className="block text-sm font-medium text-foreground mb-2"
-                >
-                  {t("form.type")}
-                </label>
-                <select
-                  id="type"
-                  value={formData.type}
-                  onChange={(e) =>
-                    setFormData({ ...formData, type: e.target.value })
-                  }
-                  className="w-full px-4 py-3 rounded-lg border border-border/50 bg-background/50 text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary/50 transition-all duration-300"
-                >
-                  <option value="inquiry">{t("form.types.inquiry")}</option>
-                  <option value="quote">{t("form.types.quote")}</option>
-                  <option value="consultation">
-                    {t("form.types.consultation")}
-                  </option>
-                  <option value="other">{t("form.types.other")}</option>
-                </select>
+              <div className="grid sm:grid-cols-2 gap-6 mb-6">
+                <div>
+                  <label
+                    htmlFor="company"
+                    className="block text-sm font-medium text-foreground mb-2"
+                  >
+                    {t("form.company")}
+                  </label>
+                  <input
+                    type="text"
+                    id="company"
+                    name="company"
+                    value={formData.company}
+                    onChange={(e) => setFormData({ ...formData, company: e.target.value })}
+                    autoComplete="organization"
+                    className="w-full px-4 py-3 rounded-lg border border-border/50 bg-background/50 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary/50 transition-all duration-300"
+                    placeholder={t("form.companyPlaceholder")}
+                  />
+                </div>
+                <div>
+                  <label
+                    htmlFor="type"
+                    className="block text-sm font-medium text-foreground mb-2"
+                  >
+                    {t("form.type")}
+                  </label>
+                  <select
+                    id="type"
+                    name="type"
+                    value={formData.type}
+                    onChange={(e) => setFormData({ ...formData, type: e.target.value })}
+                    className="w-full px-4 py-3 rounded-lg border border-border/50 bg-background/50 text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary/50 transition-all duration-300"
+                  >
+                    <option value="inquiry">{t("form.types.inquiry")}</option>
+                    <option value="quote">{t("form.types.quote")}</option>
+                    <option value="consultation">{t("form.types.consultation")}</option>
+                    <option value="other">{t("form.types.other")}</option>
+                  </select>
+                </div>
               </div>
 
               <div className="mb-6">
@@ -203,19 +199,24 @@ export default function ContactSection() {
                   htmlFor="message"
                   className="block text-sm font-medium text-foreground mb-2"
                 >
-                  {t("form.message")}
+                  {t("form.message")} <span className="text-primary">*</span>
                 </label>
                 <textarea
                   id="message"
+                  name="message"
                   value={formData.message}
-                  onChange={(e) =>
-                    setFormData({ ...formData, message: e.target.value })
-                  }
+                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   required
-                  rows={4}
+                  rows={5}
                   className="w-full px-4 py-3 rounded-lg border border-border/50 bg-background/50 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary/50 transition-all duration-300 resize-none"
                   placeholder={t("form.messagePlaceholder")}
                 />
+              </div>
+
+              {/* Privacy note */}
+              <div className="flex items-center gap-2 mb-6 text-sm text-muted-foreground">
+                <Lock className="h-4 w-4 shrink-0" aria-hidden="true" />
+                <p>{t("form.privacy")}</p>
               </div>
 
               <button
@@ -225,21 +226,22 @@ export default function ContactSection() {
                   "w-full flex items-center justify-center gap-2 px-6 py-4 rounded-lg font-medium transition-all duration-300",
                   formState === "success"
                     ? "bg-green-500 text-white"
-                    : "bg-primary text-primary-foreground hover:shadow-lg hover:shadow-primary/25"
+                    : "bg-primary text-primary-foreground hover:shadow-lg hover:shadow-primary/25",
+                  formState === "submitting" && "opacity-80 cursor-not-allowed"
                 )}
               >
                 {formState === "idle" && (
                   <>
-                    <Send className="h-4 w-4" />
+                    <Send className="h-4 w-4" aria-hidden="true" />
                     {t("form.submit")}
                   </>
                 )}
                 {formState === "submitting" && (
-                  <div className="h-5 w-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                  <div className="h-5 w-5 border-2 border-white/30 border-t-white rounded-full animate-spin" aria-label="Sending message" />
                 )}
                 {formState === "success" && (
                   <>
-                    <CheckCircle2 className="h-4 w-4" />
+                    <CheckCircle2 className="h-4 w-4" aria-hidden="true" />
                     {t("form.success")}
                   </>
                 )}

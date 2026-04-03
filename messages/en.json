@@ -10,10 +10,10 @@
   },
   "hero": {
     "title": "Multilingual AI Quality, Localization & Interpretation",
-    "subtitle": "Independent specialist delivering premium AI data operations, RLHF training, and cross-border language services for Nordic and international markets.",
-    "description": "AI Data Ops & RLHF Specialist",
+    "subtitle": "Independent specialist based in Trondheim, Norway. Delivering precision AI data operations, RLHF training, and cross-border language services for Nordic and international markets.",
+    "description": "AI Quality Specialist | Trondheim",
     "cta": {
-      "primary": "Start a Conversation",
+      "primary": "Discuss Your Project",
       "secondary": "View Services"
     }
   },
@@ -27,249 +27,274 @@
       "label": "Years Experience"
     },
     "languages": {
-      "value": "8+",
-      "label": "Languages"
+      "value": "5+",
+      "label": "Working Languages"
     },
-    "clients": {
-      "value": "50+",
-      "label": "Enterprise Clients"
+    "location": {
+      "value": "Trondheim",
+      "label": "Norway"
     }
   },
   "about": {
     "title": "Building Trust Through Precision",
-    "trust": "Trust and Quality",
-    "description": "As an independent multilingual specialist based in Norway, I combine deep linguistic expertise with cutting-edge AI technology to deliver exceptional quality in data operations, localization, and interpretation services."
+    "trust": "Disciplined Execution",
+    "description": "As an independent multilingual specialist based in Trondheim, Norway, I combine deep linguistic expertise with hands-on AI technology experience. Every project receives focused attention, clear communication, and deliverables that meet the highest professional standards. All work is handled with strict confidentiality.",
+    "highlights": {
+      "nda": "NDA-ready for sensitive projects",
+      "response": "24-48 hour response guarantee",
+      "quality": "Multi-stage quality verification"
+    }
   },
   "services": {
     "title": "Services",
-    "label": "What I Do",
-    "description": "Comprehensive language and AI solutions tailored for modern enterprises.",
+    "label": "What I Deliver",
+    "description": "Specialized language and AI solutions for organizations that require precision, reliability, and confidentiality.",
     "viewAll": "View all services",
     "items": {
       "aiDataOps": {
         "title": "AI Data Operations",
-        "description": "High-quality data annotation, labeling, and curation for machine learning models. Expert RLHF training data for LLMs."
+        "description": "High-quality data annotation, labeling, and curation for machine learning models. Expert RLHF training data for LLMs with native-level linguistic precision."
       },
       "localization": {
         "title": "Localization & Translation",
-        "description": "Professional localization services ensuring cultural accuracy and linguistic precision across Nordic and European markets."
+        "description": "Professional localization ensuring cultural accuracy and linguistic precision for Nordic and European markets. State-authorized translation services."
       },
       "interpretation": {
         "title": "Interpretation Services",
-        "description": "Real-time interpretation for business meetings, conferences, and legal proceedings in multiple language combinations."
+        "description": "Professional interpretation for business meetings, legal proceedings, and healthcare settings. Norwegian-Turkish-English combinations."
       },
       "quality": {
         "title": "Quality Assurance",
-        "description": "Rigorous QA processes for AI outputs, translations, and multilingual content to ensure consistency and accuracy."
+        "description": "Rigorous QA for AI outputs, translations, and multilingual content. Terminology management and consistency verification across projects."
       }
     }
   },
   "why": {
     "label": "Why Work With Me",
-    "title": "Trusted by Industry Leaders",
-    "description": "Combining technical expertise with linguistic mastery to deliver results that exceed expectations.",
+    "title": "Clear Value, No Surprises",
+    "description": "Direct engagement with a specialist who understands both language and technology. No agency overhead, no handoffs, no miscommunication.",
     "reasons": {
       "expertise": {
-        "title": "Deep Domain Expertise",
-        "description": "Specialized knowledge in AI, technology, legal, and business domains.",
+        "title": "Domain Expertise",
+        "description": "Hands-on experience with AI/ML workflows, technical documentation, and specialized terminology.",
         "points": [
-          "Advanced understanding of AI/ML workflows",
-          "Technical terminology mastery",
-          "Industry-specific quality standards"
+          "AI and technology sector focus",
+          "Legal and business documentation",
+          "Technical terminology accuracy"
         ]
       },
       "communication": {
         "title": "Clear Communication",
-        "description": "Direct, responsive, and professional communication at every stage.",
+        "description": "Direct, responsive, and professional. You work with me directly—no account managers or intermediaries.",
         "points": [
           "24-48 hour response guarantee",
           "Regular progress updates",
-          "Transparent project timelines"
+          "Transparent timelines and pricing"
         ]
       },
-      "efficiency": {
-        "title": "Operational Efficiency",
-        "description": "Streamlined processes that deliver results quickly without compromising quality.",
+      "confidentiality": {
+        "title": "Confidentiality First",
+        "description": "All projects handled with strict confidentiality. NDA signing is standard practice.",
         "points": [
-          "Rapid turnaround capabilities",
-          "Scalable capacity for large projects",
-          "Efficient workflow management"
+          "NDA-ready as standard",
+          "Secure data handling protocols",
+          "Discreet professional service"
         ]
       },
       "precision": {
-        "title": "Uncompromising Precision",
-        "description": "Meticulous attention to detail in every deliverable.",
+        "title": "Quality Without Compromise",
+        "description": "Multi-stage verification ensures accuracy and consistency in every deliverable.",
         "points": [
           "Multi-stage quality checks",
-          "Contextual accuracy verification",
-          "Consistent terminology management"
+          "Terminology consistency",
+          "Context-aware verification"
         ]
       }
     }
   },
   "credentials": {
-    "title": "Credentials & Qualifications",
-    "label": "Professional Background",
-    "description": "Formal certifications and recognized qualifications ensuring the highest standards.",
+    "title": "Credentials & Background",
+    "label": "Professional Qualifications",
+    "description": "Verified certifications and recognized qualifications that demonstrate commitment to professional standards.",
     "viewAll": "View all credentials",
     "items": {
       "translator": {
         "title": "State-Authorized Translator",
-        "issuer": "Norwegian Government"
+        "issuer": "Norwegian Government",
+        "description": "Official certification for legal and official document translation"
       },
       "interpreter": {
-        "title": "Certified Interpreter",
-        "issuer": "National Certification Board"
+        "title": "Professional Interpreter",
+        "issuer": "Norwegian Public Register",
+        "description": "Qualified for healthcare, legal, and public sector interpretation"
       },
       "rlhf": {
-        "title": "RLHF Specialist",
-        "issuer": "AI Industry Certified"
+        "title": "AI Data Operations",
+        "issuer": "Industry Experience",
+        "description": "Hands-on RLHF training and AI quality work with leading platforms"
       },
       "dataOps": {
-        "title": "Data Operations Expert",
-        "issuer": "Industry Recognition"
+        "title": "Multilingual Data Specialist",
+        "issuer": "Project-Based Experience",
+        "description": "Annotation, labeling, and quality assurance for ML datasets"
       }
     }
   },
   "languages": {
     "label": "Language Capabilities",
-    "title": "Cross-Border Expertise",
-    "description": "Comprehensive coverage across Nordic, European, and international language combinations.",
+    "title": "Working Languages",
+    "description": "Native and professional proficiency across Nordic and cross-border language combinations.",
     "pairs": {
       "title": "Primary Language Pairs"
     },
+    "note": "All combinations available for translation, localization, and interpretation services.",
     "regions": {
       "nordic": {
         "title": "Nordic Languages",
-        "description": "Native-level expertise in Scandinavian languages with deep cultural understanding."
-      },
-      "european": {
-        "title": "European Languages",
-        "description": "Professional proficiency in major European business languages."
+        "description": "Norwegian (native), Swedish, Danish—with deep cultural and business context understanding."
       },
       "crossBorder": {
-        "title": "Cross-Border Coverage",
-        "description": "Bridging markets with specialized language combinations."
+        "title": "Cross-Border Bridge",
+        "description": "Turkish-Norwegian-English combinations for Nordic-Turkish business and community contexts."
+      },
+      "technical": {
+        "title": "Technical English",
+        "description": "Specialized in AI/ML terminology, technical documentation, and software localization."
       }
     }
   },
   "nordic": {
-    "label": "Nordic AI Authority",
-    "title": "Specialized Nordic AI Localization",
-    "description": "Deep expertise in adapting AI systems for Nordic markets, ensuring cultural relevance and linguistic accuracy that global providers cannot match.",
+    "label": "Nordic AI Specialization",
+    "title": "Why Nordic AI Localization Matters",
+    "description": "AI products that work well in English often fail in Nordic markets. Translation alone is not enough—Nordic users expect culturally adapted interfaces, appropriate tone, and locally relevant content.",
+    "intro": "As a multilingual specialist with deep Nordic roots and hands-on AI experience, I help organizations adapt their AI products for Norwegian, Swedish, and Danish users in ways that global providers cannot.",
     "points": [
-      "Native understanding of Nordic business culture and communication norms",
-      "Specialized vocabulary for Nordic legal, financial, and technical domains",
-      "Direct collaboration with Nordic AI companies and research institutions"
+      "Norwegian, Swedish, and Danish are distinct languages with different terminology, formality norms, and user expectations",
+      "AI tone and phrasing that works in English can feel awkward, too informal, or even untrustworthy in Nordic contexts",
+      "Smaller language markets require human oversight—automated translation introduces errors that erode user trust",
+      "Nordic users have high expectations for quality and accuracy, especially in professional and public-sector contexts"
     ],
     "capabilities": {
       "aiTraining": {
         "title": "AI Training Data",
-        "description": "High-quality Nordic language datasets for model training and fine-tuning."
+        "description": "Native-quality Nordic language datasets for model training and fine-tuning."
       },
       "localization": {
-        "title": "AI Localization",
-        "description": "Adapting AI interfaces and outputs for Nordic user expectations."
+        "title": "AI Interface Localization",
+        "description": "Adapting AI outputs and interfaces for Nordic tone, formality, and user expectations."
       },
       "compliance": {
-        "title": "Regulatory Compliance",
-        "description": "Ensuring AI content meets Nordic legal and ethical standards."
+        "title": "Quality & Consistency",
+        "description": "Ensuring AI content meets Nordic standards for clarity, accuracy, and appropriateness."
       },
       "quality": {
-        "title": "Output Quality",
-        "description": "Rigorous QA for AI-generated Nordic language content."
+        "title": "Human QA Oversight",
+        "description": "Catching the errors that automated systems miss in smaller language markets."
       }
+    },
+    "cta": {
+      "title": "Planning Nordic AI Expansion?",
+      "description": "Let's discuss how to adapt your AI product for Nordic markets.",
+      "button": "Start a Conversation"
     }
   },
   "workModel": {
-    "label": "Engagement Models",
-    "title": "Flexible Working Arrangements",
-    "description": "Choose the engagement model that best fits your project scope and timeline.",
+    "label": "How I Work",
+    "title": "Engagement Options",
+    "description": "Flexible arrangements to match your project scope, timeline, and ongoing needs.",
     "models": {
       "hourly": {
         "title": "Hourly Rate",
-        "description": "Flexible billing for smaller tasks or ongoing support needs.",
-        "ideal": "Ideal for ad-hoc requests"
+        "description": "Flexible billing for smaller tasks, consultations, or ongoing support.",
+        "ideal": "Ad-hoc requests & consultations"
       },
       "project": {
         "title": "Project-Based",
-        "description": "Fixed scope and pricing for defined deliverables.",
-        "ideal": "Ideal for defined projects"
+        "description": "Fixed scope and pricing for defined deliverables with clear milestones.",
+        "ideal": "Defined projects with clear scope"
       },
       "retainer": {
         "title": "Monthly Retainer",
-        "description": "Reserved capacity with priority access and volume discounts.",
-        "ideal": "Ideal for ongoing needs"
+        "description": "Reserved capacity with priority access and predictable monthly costs.",
+        "ideal": "Ongoing needs with volume"
       },
       "ongoing": {
         "title": "Long-Term Partnership",
-        "description": "Strategic partnership with dedicated support and custom SLAs.",
-        "ideal": "Ideal for enterprise clients"
+        "description": "Strategic collaboration with dedicated support and custom arrangements.",
+        "ideal": "Enterprise & ongoing programs"
       }
     },
     "process": {
-      "title": "How We Work Together",
+      "title": "Working Together",
       "steps": {
         "0": {
           "title": "Discovery",
-          "description": "Understanding your needs and project scope"
+          "description": "Understanding your requirements, scope, and timeline"
         },
         "1": {
           "title": "Proposal",
-          "description": "Detailed plan with timeline and pricing"
+          "description": "Clear plan with pricing, deliverables, and milestones"
         },
         "2": {
           "title": "Execution",
-          "description": "Professional delivery with regular updates"
+          "description": "Professional delivery with regular progress updates"
         },
         "3": {
           "title": "Review",
-          "description": "Quality assurance and final delivery"
+          "description": "Quality verification and final delivery"
         }
       }
     }
   },
   "faq": {
     "label": "FAQ",
-    "title": "Frequently Asked Questions",
-    "description": "Find answers to common questions about services and working together.",
+    "title": "Common Questions",
+    "description": "Answers to questions I frequently receive from prospective clients.",
     "items": {
       "whatIsRlhf": {
-        "question": "What is RLHF and why is it important?",
-        "answer": "RLHF (Reinforcement Learning from Human Feedback) is a crucial technique for training AI models to produce more helpful, accurate, and safe outputs. As an RLHF specialist, I provide high-quality human feedback data that helps AI systems better understand user intent and deliver more relevant responses."
+        "question": "What is RLHF and why does it matter for AI quality?",
+        "answer": "RLHF (Reinforcement Learning from Human Feedback) is how modern AI systems learn to produce helpful, accurate responses. As an RLHF specialist, I provide the high-quality human feedback data that helps AI models understand nuance, context, and user intent—especially important for Nordic languages where training data is limited."
       },
       "turnaround": {
-        "question": "What is the typical turnaround time?",
-        "answer": "Turnaround times vary based on project scope. Standard translation projects typically take 1-3 business days, while larger AI data operations projects are scoped individually. Rush services are available for urgent requests."
+        "question": "What turnaround times can I expect?",
+        "answer": "Standard translation projects typically take 1-3 business days depending on volume. AI data operations projects are scoped individually based on complexity. I always provide realistic timelines upfront, and rush services are available for urgent needs."
       },
       "industries": {
-        "question": "Which industries do you serve?",
-        "answer": "I work across technology, AI/ML, legal, financial services, healthcare, and government sectors. My specialization in technical and AI-related content makes me particularly valuable for tech companies and AI research organizations."
+        "question": "Which industries and sectors do you serve?",
+        "answer": "I work primarily with technology companies, AI/ML organizations, legal and financial services, healthcare, and public sector clients. My combination of AI expertise and linguistic qualifications makes me particularly valuable for organizations working at the intersection of technology and language."
       },
       "confidentiality": {
-        "question": "How do you handle confidential information?",
-        "answer": "All projects are treated with strict confidentiality. I sign NDAs as standard practice and follow industry-leading security protocols for data handling. Sensitive materials are stored securely and deleted after project completion."
+        "question": "How do you handle sensitive and confidential information?",
+        "answer": "Confidentiality is foundational to my practice. I sign NDAs as standard, follow strict data security protocols, and handle all materials with professional discretion. Sensitive files are stored securely and deleted upon project completion per client requirements."
       },
       "languages": {
         "question": "Which language combinations do you support?",
-        "answer": "I specialize in Norwegian, Swedish, Danish, Turkish, and English in various combinations. My native-level proficiency in these languages ensures accuracy and cultural appropriateness in all deliverables."
+        "answer": "My core languages are Norwegian (native), Turkish (native), English (professional), Swedish (professional), and Danish (professional). I specialize in combinations across these languages for translation, localization, and interpretation services."
       },
       "pricing": {
-        "question": "How is pricing determined?",
-        "answer": "Pricing depends on project type, complexity, language combination, and timeline. I offer hourly, project-based, and retainer models. Contact me with your project details for a customized quote."
+        "question": "How do you structure pricing?",
+        "answer": "Pricing depends on project type, complexity, language combination, and timeline. I offer hourly, project-based, and retainer models. After an initial conversation about your needs, I provide a clear, detailed quote with no hidden costs."
+      },
+      "remote": {
+        "question": "Do you work with clients outside Norway?",
+        "answer": "Yes. While I'm based in Trondheim, I work with clients across the Nordics, Europe, and internationally. Remote collaboration is seamless, and I adjust availability for different time zones when needed."
+      },
+      "ai": {
+        "question": "Do you use AI tools in your work?",
+        "answer": "I use AI tools strategically where they add value—but all deliverables receive human verification and quality assurance. For smaller languages like Norwegian, human oversight is essential because AI outputs often contain subtle errors that erode trust."
       }
     }
   },
   "contact": {
     "label": "Get in Touch",
-    "title": "Start a Conversation",
-    "description": "Ready to discuss your project? I respond to all inquiries within 24-48 hours.",
+    "title": "Let's Discuss Your Project",
+    "description": "Ready to explore how I can help? I respond to all inquiries within 24-48 hours.",
     "info": {
       "email": {
         "label": "Email"
       },
       "location": {
-        "label": "Location"
+        "label": "Based in"
       },
       "response": {
         "label": "Response Time"
@@ -277,33 +302,35 @@
     },
     "availability": {
       "title": "Current Availability",
-      "description": "Available for new projects and consultations.",
-      "status": "Available for new projects"
+      "description": "Currently accepting new projects and consultations.",
+      "status": "Accepting new projects"
     },
     "form": {
       "name": "Name",
-      "namePlaceholder": "Your full name",
+      "namePlaceholder": "Your name",
       "email": "Email",
       "emailPlaceholder": "your@email.com",
-      "company": "Company (optional)",
-      "companyPlaceholder": "Your company name",
+      "company": "Organization (optional)",
+      "companyPlaceholder": "Company or organization name",
       "type": "Inquiry Type",
       "types": {
         "inquiry": "General Inquiry",
         "quote": "Request a Quote",
-        "consultation": "Schedule Consultation",
+        "consultation": "Schedule a Call",
         "other": "Other"
       },
       "message": "Message",
-      "messagePlaceholder": "Tell me about your project or question...",
+      "messagePlaceholder": "Tell me about your project, requirements, or questions...",
       "submit": "Send Message",
-      "success": "Message Sent!"
+      "success": "Message Sent",
+      "privacy": "Your information is handled with strict confidentiality."
     }
   },
   "footer": {
     "copyright": "All rights reserved",
-    "privacy": "Privacy Policy",
-    "terms": "Terms of Service",
-    "tagline": "Premium multilingual AI quality, localization & interpretation services"
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "tagline": "Multilingual AI quality, localization & interpretation | Trondheim, Norway",
+    "location": "Based in Trondheim, Norway. Working with clients across the Nordics and internationally."
   }
 }

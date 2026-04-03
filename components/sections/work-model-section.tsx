@@ -50,7 +50,7 @@ export default function WorkModelSection() {
 
               <div className="relative">
                 <div className="p-3 rounded-xl border border-border/50 bg-card/50 w-fit mb-4 group-hover:border-primary/30 group-hover:bg-primary/10 transition-all duration-300">
-                  <model.icon className="h-6 w-6 text-primary" />
+                  <model.icon className="h-6 w-6 text-primary" aria-hidden="true" />
                 </div>
                 <h3 className="text-lg font-semibold text-foreground mb-2">
                   {t(`models.${model.key}.title`)}

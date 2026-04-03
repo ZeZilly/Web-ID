@@ -10,10 +10,10 @@
   },
   "hero": {
     "title": "Flerspråklig AI-kvalitet, lokalisering og tolking",
-    "subtitle": "Uavhengig spesialist som leverer førsteklasses AI-dataoperasjoner, RLHF-trening og grenseoverskridende språktjenester for nordiske og internasjonale markeder.",
-    "description": "AI Data Ops & RLHF-spesialist",
+    "subtitle": "Uavhengig spesialist basert i Trondheim, Norge. Leverer presise AI-dataoperasjoner, RLHF-trening og grenseoverskridende språktjenester for nordiske og internasjonale markeder.",
+    "description": "AI-kvalitetsspesialist | Trondheim",
     "cta": {
-      "primary": "Start en samtale",
+      "primary": "Diskuter ditt prosjekt",
       "secondary": "Se tjenester"
     }
   },
@@ -27,249 +27,274 @@
       "label": "Års erfaring"
     },
     "languages": {
-      "value": "8+",
-      "label": "Språk"
+      "value": "5+",
+      "label": "Arbeidsspråk"
     },
-    "clients": {
-      "value": "50+",
-      "label": "Bedriftskunder"
+    "location": {
+      "value": "Trondheim",
+      "label": "Norge"
     }
   },
   "about": {
     "title": "Bygger tillit gjennom presisjon",
-    "trust": "Tillit og kvalitet",
-    "description": "Som uavhengig flerspråklig spesialist basert i Norge kombinerer jeg dyp lingvistisk ekspertise med banebrytende AI-teknologi for å levere eksepsjonell kvalitet i dataoperasjoner, lokalisering og tolketjenester."
+    "trust": "Disiplinert gjennomføring",
+    "description": "Som uavhengig flerspråklig spesialist basert i Trondheim kombinerer jeg dyp lingvistisk ekspertise med praktisk AI-teknologierfaring. Hvert prosjekt får fokusert oppmerksomhet, tydelig kommunikasjon og leveranser som møter de høyeste profesjonelle standarder. Alt arbeid håndteres med streng konfidensialitet.",
+    "highlights": {
+      "nda": "NDA-klar for sensitive prosjekter",
+      "response": "24-48 timers responsgaranti",
+      "quality": "Flertrinnsk kvalitetsverifisering"
+    }
   },
   "services": {
     "title": "Tjenester",
-    "label": "Hva jeg gjør",
-    "description": "Omfattende språk- og AI-løsninger skreddersydd for moderne bedrifter.",
+    "label": "Hva jeg leverer",
+    "description": "Spesialiserte språk- og AI-løsninger for organisasjoner som krever presisjon, pålitelighet og konfidensialitet.",
     "viewAll": "Se alle tjenester",
     "items": {
       "aiDataOps": {
         "title": "AI-dataoperasjoner",
-        "description": "Høykvalitets dataannotering, merking og kuratering for maskinlæringsmodeller. Ekspert RLHF-treningsdata for LLM-er."
+        "description": "Høykvalitets dataannotering, merking og kuratering for maskinlæringsmodeller. Ekspert RLHF-treningsdata for LLM-er med morsmålspresisjon."
       },
       "localization": {
         "title": "Lokalisering og oversettelse",
-        "description": "Profesjonelle lokaliseringstjenester som sikrer kulturell nøyaktighet og lingvistisk presisjon i nordiske og europeiske markeder."
+        "description": "Profesjonell lokalisering som sikrer kulturell nøyaktighet og lingvistisk presisjon for nordiske og europeiske markeder. Statsautoriserte oversettelsestjenester."
       },
       "interpretation": {
         "title": "Tolketjenester",
-        "description": "Sanntidstolking for forretningsmøter, konferanser og rettslige forhandlinger i flere språkkombinasjoner."
+        "description": "Profesjonell tolking for forretningsmøter, rettslige forhandlinger og helsesammenhenger. Norsk-tyrkisk-engelsk kombinasjoner."
       },
       "quality": {
         "title": "Kvalitetssikring",
-        "description": "Grundige QA-prosesser for AI-output, oversettelser og flerspråklig innhold for å sikre konsistens og nøyaktighet."
+        "description": "Grundig QA for AI-output, oversettelser og flerspråklig innhold. Terminologistyring og konsistensverifisering på tvers av prosjekter."
       }
     }
   },
   "why": {
     "label": "Hvorfor jobbe med meg",
-    "title": "Betrodd av bransjeledere",
-    "description": "Kombinerer teknisk ekspertise med språkmestring for å levere resultater som overgår forventningene.",
+    "title": "Tydelig verdi, ingen overraskelser",
+    "description": "Direkte engasjement med en spesialist som forstår både språk og teknologi. Ingen byråoverhead, ingen overleveringer, ingen misforståelser.",
     "reasons": {
       "expertise": {
-        "title": "Dyp domenekompetanse",
-        "description": "Spesialisert kunnskap innen AI, teknologi, jus og forretningsdomener.",
+        "title": "Domenekompetanse",
+        "description": "Praktisk erfaring med AI/ML-arbeidsflyter, teknisk dokumentasjon og spesialisert terminologi.",
         "points": [
-          "Avansert forståelse av AI/ML-arbeidsflyter",
-          "Mestring av teknisk terminologi",
-          "Bransjespesifikke kvalitetsstandarder"
+          "AI- og teknologisektorfokus",
+          "Juridisk og forretningsdokumentasjon",
+          "Teknisk terminologinøyaktighet"
         ]
       },
       "communication": {
         "title": "Tydelig kommunikasjon",
-        "description": "Direkte, responsiv og profesjonell kommunikasjon i alle faser.",
+        "description": "Direkte, responsiv og profesjonell. Du jobber med meg direkte—ingen kontoadministratorer eller mellomledd.",
         "points": [
           "24-48 timers responsgaranti",
           "Regelmessige fremdriftsoppdateringer",
-          "Transparente prosjekttidslinjer"
+          "Transparente tidslinjer og priser"
         ]
       },
-      "efficiency": {
-        "title": "Operasjonell effektivitet",
-        "description": "Strømlinjeformede prosesser som leverer resultater raskt uten å kompromisse med kvalitet.",
+      "confidentiality": {
+        "title": "Konfidensialitet først",
+        "description": "Alle prosjekter håndteres med streng konfidensialitet. NDA-signering er standardpraksis.",
         "points": [
-          "Rask leveringskapasitet",
-          "Skalerbar kapasitet for store prosjekter",
-          "Effektiv arbeidsflytstyring"
+          "NDA-klar som standard",
+          "Sikre datahåndteringsprotokoller",
+          "Diskret profesjonell tjeneste"
         ]
       },
       "precision": {
-        "title": "Kompromissløs presisjon",
-        "description": "Grundig oppmerksomhet på detaljer i hver leveranse.",
+        "title": "Kvalitet uten kompromiss",
+        "description": "Flertrinnsk verifisering sikrer nøyaktighet og konsistens i hver leveranse.",
         "points": [
-          "Flertrinns kvalitetskontroller",
-          "Kontekstuell nøyaktighetsverifisering",
-          "Konsistent terminologistyring"
+          "Flertrinnsk kvalitetskontroll",
+          "Terminologikonsistens",
+          "Kontekstbevisst verifisering"
         ]
       }
     }
   },
   "credentials": {
-    "title": "Kvalifikasjoner og sertifiseringer",
-    "label": "Profesjonell bakgrunn",
-    "description": "Formelle sertifiseringer og anerkjente kvalifikasjoner som sikrer høyeste standarder.",
+    "title": "Kvalifikasjoner og bakgrunn",
+    "label": "Profesjonelle kvalifikasjoner",
+    "description": "Verifiserte sertifiseringer og anerkjente kvalifikasjoner som demonstrerer forpliktelse til profesjonelle standarder.",
     "viewAll": "Se alle kvalifikasjoner",
     "items": {
       "translator": {
         "title": "Statsautorisert translatør",
-        "issuer": "Norske myndigheter"
+        "issuer": "Norske myndigheter",
+        "description": "Offisiell sertifisering for juridisk og offisiell dokumentoversettelse"
       },
       "interpreter": {
-        "title": "Sertifisert tolk",
-        "issuer": "Nasjonal sertifiseringsnemnd"
+        "title": "Profesjonell tolk",
+        "issuer": "Nasjonalt tolkeregister",
+        "description": "Kvalifisert for helse-, juridisk og offentlig sektor tolking"
       },
       "rlhf": {
-        "title": "RLHF-spesialist",
-        "issuer": "AI-bransjesertifisert"
+        "title": "AI-dataoperasjoner",
+        "issuer": "Bransjeerfaring",
+        "description": "Praktisk RLHF-trening og AI-kvalitetsarbeid med ledende plattformer"
       },
       "dataOps": {
-        "title": "Dataoperasjonsekspert",
-        "issuer": "Bransjeanerkjennelse"
+        "title": "Flerspråklig dataspesialist",
+        "issuer": "Prosjektbasert erfaring",
+        "description": "Annotering, merking og kvalitetssikring for ML-datasett"
       }
     }
   },
   "languages": {
     "label": "Språkkapasitet",
-    "title": "Grenseoverskridende ekspertise",
-    "description": "Omfattende dekning av nordiske, europeiske og internasjonale språkkombinasjoner.",
+    "title": "Arbeidsspråk",
+    "description": "Morsmåls- og profesjonell kompetanse på tvers av nordiske og grenseoverskridende språkkombinasjoner.",
     "pairs": {
       "title": "Primære språkpar"
     },
+    "note": "Alle kombinasjoner tilgjengelige for oversettelse, lokalisering og tolketjenester.",
     "regions": {
       "nordic": {
         "title": "Nordiske språk",
-        "description": "Ekspertise på morsmålsnivå i skandinaviske språk med dyp kulturell forståelse."
-      },
-      "european": {
-        "title": "Europeiske språk",
-        "description": "Profesjonell kompetanse i de viktigste europeiske forretningsspråkene."
+        "description": "Norsk (morsmål), svensk, dansk—med dyp kulturell og forretningskontekstforståelse."
       },
       "crossBorder": {
-        "title": "Grenseoverskridende dekning",
-        "description": "Brobygging mellom markeder med spesialiserte språkkombinasjoner."
+        "title": "Grenseoverskridende bro",
+        "description": "Tyrkisk-norsk-engelsk kombinasjoner for nordisk-tyrkiske forretnings- og samfunnsammenhenger."
+      },
+      "technical": {
+        "title": "Teknisk engelsk",
+        "description": "Spesialisert i AI/ML-terminologi, teknisk dokumentasjon og programvarelokalisering."
       }
     }
   },
   "nordic": {
-    "label": "Nordisk AI-autoritet",
-    "title": "Spesialisert nordisk AI-lokalisering",
-    "description": "Dyp ekspertise i tilpasning av AI-systemer for nordiske markeder, som sikrer kulturell relevans og språklig nøyaktighet som globale leverandører ikke kan matche.",
+    "label": "Nordisk AI-spesialisering",
+    "title": "Hvorfor nordisk AI-lokalisering er viktig",
+    "description": "AI-produkter som fungerer godt på engelsk feiler ofte i nordiske markeder. Oversettelse alene er ikke nok—nordiske brukere forventer kulturelt tilpassede grensesnitt, passende tone og lokalt relevant innhold.",
+    "intro": "Som flerspråklig spesialist med dype nordiske røtter og praktisk AI-erfaring hjelper jeg organisasjoner med å tilpasse AI-produktene sine for norske, svenske og danske brukere på måter globale leverandører ikke kan.",
     "points": [
-      "Innfødt forståelse av nordisk forretningskultur og kommunikasjonsnormer",
-      "Spesialisert vokabular for nordiske juridiske, finansielle og tekniske domener",
-      "Direkte samarbeid med nordiske AI-selskaper og forskningsinstitusjoner"
+      "Norsk, svensk og dansk er distinkte språk med forskjellig terminologi, formalitetsnormer og brukerforventninger",
+      "AI-tone og frasering som fungerer på engelsk kan føles klosset, for uformell eller til og med upålitelig i nordiske sammenhenger",
+      "Mindre språkmarkeder krever menneskelig tilsyn—automatisert oversettelse introduserer feil som undergraver brukertillit",
+      "Nordiske brukere har høye forventninger til kvalitet og nøyaktighet, spesielt i profesjonelle og offentlige sammenhenger"
     ],
     "capabilities": {
       "aiTraining": {
         "title": "AI-treningsdata",
-        "description": "Høykvalitets nordiske språkdatasett for modelltrening og finjustering."
+        "description": "Morsmålskvalitet nordiske språkdatasett for modelltrening og finjustering."
       },
       "localization": {
-        "title": "AI-lokalisering",
-        "description": "Tilpasning av AI-grensesnitt og output for nordiske brukeres forventninger."
+        "title": "AI-grensesnittlokalisering",
+        "description": "Tilpasning av AI-output og grensesnitt for nordisk tone, formalitet og brukerforventninger."
       },
       "compliance": {
-        "title": "Regulatorisk samsvar",
-        "description": "Sikrer at AI-innhold oppfyller nordiske juridiske og etiske standarder."
+        "title": "Kvalitet og konsistens",
+        "description": "Sikrer at AI-innhold møter nordiske standarder for klarhet, nøyaktighet og egnethet."
       },
       "quality": {
-        "title": "Outputkvalitet",
-        "description": "Grundig QA for AI-generert nordisk språkinnhold."
+        "title": "Menneskelig QA-tilsyn",
+        "description": "Fanger opp feilene som automatiserte systemer overser i mindre språkmarkeder."
       }
+    },
+    "cta": {
+      "title": "Planlegger nordisk AI-ekspansjon?",
+      "description": "La oss diskutere hvordan du kan tilpasse AI-produktet ditt for nordiske markeder.",
+      "button": "Start en samtale"
     }
   },
   "workModel": {
-    "label": "Engasjementsmodeller",
-    "title": "Fleksible arbeidsordninger",
-    "description": "Velg engasjementsmodellen som passer best til prosjektets omfang og tidslinje.",
+    "label": "Slik jobber jeg",
+    "title": "Engasjementsalternativer",
+    "description": "Fleksible ordninger som matcher prosjektomfang, tidslinje og løpende behov.",
     "models": {
       "hourly": {
         "title": "Timepris",
-        "description": "Fleksibel fakturering for mindre oppgaver eller løpende støttebehov.",
-        "ideal": "Ideelt for ad-hoc-forespørsler"
+        "description": "Fleksibel fakturering for mindre oppgaver, konsultasjoner eller løpende støtte.",
+        "ideal": "Ad-hoc forespørsler og konsultasjoner"
       },
       "project": {
         "title": "Prosjektbasert",
-        "description": "Fast omfang og pris for definerte leveranser.",
-        "ideal": "Ideelt for definerte prosjekter"
+        "description": "Fast omfang og pris for definerte leveranser med tydelige milepæler.",
+        "ideal": "Definerte prosjekter med klart omfang"
       },
       "retainer": {
         "title": "Månedlig retainer",
-        "description": "Reservert kapasitet med prioritert tilgang og volumerabatter.",
-        "ideal": "Ideelt for løpende behov"
+        "description": "Reservert kapasitet med prioritert tilgang og forutsigbare månedlige kostnader.",
+        "ideal": "Løpende behov med volum"
       },
       "ongoing": {
         "title": "Langsiktig partnerskap",
-        "description": "Strategisk partnerskap med dedikert støtte og tilpassede SLA-er.",
-        "ideal": "Ideelt for bedriftskunder"
+        "description": "Strategisk samarbeid med dedikert støtte og tilpassede ordninger.",
+        "ideal": "Enterprise og løpende programmer"
       }
     },
     "process": {
-      "title": "Hvordan vi jobber sammen",
+      "title": "Samarbeidsprosessen",
       "steps": {
         "0": {
           "title": "Kartlegging",
-          "description": "Forstå dine behov og prosjektomfang"
+          "description": "Forstå dine krav, omfang og tidslinje"
         },
         "1": {
           "title": "Forslag",
-          "description": "Detaljert plan med tidslinje og prising"
+          "description": "Tydelig plan med prising, leveranser og milepæler"
         },
         "2": {
           "title": "Gjennomføring",
-          "description": "Profesjonell levering med regelmessige oppdateringer"
+          "description": "Profesjonell levering med regelmessige fremdriftsoppdateringer"
         },
         "3": {
           "title": "Gjennomgang",
-          "description": "Kvalitetssikring og endelig levering"
+          "description": "Kvalitetsverifisering og endelig levering"
         }
       }
     }
   },
   "faq": {
     "label": "FAQ",
-    "title": "Ofte stilte spørsmål",
-    "description": "Finn svar på vanlige spørsmål om tjenester og samarbeid.",
+    "title": "Vanlige spørsmål",
+    "description": "Svar på spørsmål jeg ofte mottar fra potensielle kunder.",
     "items": {
       "whatIsRlhf": {
-        "question": "Hva er RLHF og hvorfor er det viktig?",
-        "answer": "RLHF (Reinforcement Learning from Human Feedback) er en avgjørende teknikk for å trene AI-modeller til å produsere mer hjelpsom, nøyaktig og trygg output. Som RLHF-spesialist leverer jeg tilbakemeldingsdata av høy kvalitet som hjelper AI-systemer til å bedre forstå brukerintensjon og levere mer relevante svar."
+        "question": "Hva er RLHF og hvorfor er det viktig for AI-kvalitet?",
+        "answer": "RLHF (Reinforcement Learning from Human Feedback) er hvordan moderne AI-systemer lærer å produsere hjelpsomme, nøyaktige svar. Som RLHF-spesialist leverer jeg tilbakemeldingsdata av høy kvalitet som hjelper AI-modeller med å forstå nyanser, kontekst og brukerintensjon—spesielt viktig for nordiske språk hvor treningsdata er begrenset."
       },
       "turnaround": {
-        "question": "Hva er typisk leveringstid?",
-        "answer": "Leveringstiden varierer basert på prosjektomfang. Standard oversettelsesprosjekter tar vanligvis 1-3 virkedager, mens større AI-dataoperasjonsprosjekter scopes individuelt. Hastetjenester er tilgjengelige for presserende forespørsler."
+        "question": "Hvilke leveringstider kan jeg forvente?",
+        "answer": "Standard oversettelsesprosjekter tar vanligvis 1-3 virkedager avhengig av volum. AI-dataoperasjonsprosjekter scopes individuelt basert på kompleksitet. Jeg gir alltid realistiske tidslinjer på forhånd, og hastetjenester er tilgjengelige for presserende behov."
       },
       "industries": {
-        "question": "Hvilke bransjer betjener du?",
-        "answer": "Jeg jobber på tvers av teknologi, AI/ML, jus, finansielle tjenester, helsevesen og offentlig sektor. Min spesialisering innen teknisk og AI-relatert innhold gjør meg spesielt verdifull for teknologiselskaper og AI-forskningsorganisasjoner."
+        "question": "Hvilke bransjer og sektorer betjener du?",
+        "answer": "Jeg jobber primært med teknologiselskaper, AI/ML-organisasjoner, juridiske og finansielle tjenester, helsevesen og offentlig sektor. Min kombinasjon av AI-ekspertise og lingvistiske kvalifikasjoner gjør meg spesielt verdifull for organisasjoner som jobber i skjæringspunktet mellom teknologi og språk."
       },
       "confidentiality": {
-        "question": "Hvordan håndterer du konfidensiell informasjon?",
-        "answer": "Alle prosjekter behandles med streng konfidensialitet. Jeg signerer NDA-er som standard praksis og følger bransjens ledende sikkerhetsprotokoller for datahåndtering. Sensitivt materiale lagres sikkert og slettes etter prosjektavslutning."
+        "question": "Hvordan håndterer du sensitiv og konfidensiell informasjon?",
+        "answer": "Konfidensialitet er grunnleggende for min praksis. Jeg signerer NDA-er som standard, følger strenge datasikkerhetsprotokoller og håndterer alt materiale med profesjonell diskresjon. Sensitive filer lagres sikkert og slettes ved prosjektavslutning i henhold til kundens krav."
       },
       "languages": {
         "question": "Hvilke språkkombinasjoner støtter du?",
-        "answer": "Jeg spesialiserer meg i norsk, svensk, dansk, tyrkisk og engelsk i ulike kombinasjoner. Min kompetanse på morsmålsnivå i disse språkene sikrer nøyaktighet og kulturell egnethet i alle leveranser."
+        "answer": "Mine hovedspråk er norsk (morsmål), tyrkisk (morsmål), engelsk (profesjonell), svensk (profesjonell) og dansk (profesjonell). Jeg spesialiserer meg i kombinasjoner på tvers av disse språkene for oversettelse, lokalisering og tolketjenester."
       },
       "pricing": {
-        "question": "Hvordan bestemmes prising?",
-        "answer": "Prising avhenger av prosjekttype, kompleksitet, språkkombinasjon og tidslinje. Jeg tilbyr time-, prosjektbaserte og retainermodeller. Kontakt meg med prosjektdetaljene dine for et tilpasset tilbud."
+        "question": "Hvordan strukturerer du prising?",
+        "answer": "Prising avhenger av prosjekttype, kompleksitet, språkkombinasjon og tidslinje. Jeg tilbyr time-, prosjektbaserte og retainermodeller. Etter en innledende samtale om dine behov gir jeg et tydelig, detaljert tilbud uten skjulte kostnader."
+      },
+      "remote": {
+        "question": "Jobber du med kunder utenfor Norge?",
+        "answer": "Ja. Selv om jeg er basert i Trondheim, jobber jeg med kunder over hele Norden, Europa og internasjonalt. Fjernsamarbeid er sømløst, og jeg justerer tilgjengeligheten for ulike tidssoner ved behov."
+      },
+      "ai": {
+        "question": "Bruker du AI-verktøy i arbeidet ditt?",
+        "answer": "Jeg bruker AI-verktøy strategisk der de tilfører verdi—men alle leveranser mottar menneskelig verifisering og kvalitetssikring. For mindre språk som norsk er menneskelig tilsyn essensielt fordi AI-output ofte inneholder subtile feil som undergraver tillit."
       }
     }
   },
   "contact": {
     "label": "Ta kontakt",
-    "title": "Start en samtale",
-    "description": "Klar til å diskutere prosjektet ditt? Jeg svarer på alle henvendelser innen 24-48 timer.",
+    "title": "La oss diskutere prosjektet ditt",
+    "description": "Klar til å utforske hvordan jeg kan hjelpe? Jeg svarer på alle henvendelser innen 24-48 timer.",
     "info": {
       "email": {
         "label": "E-post"
       },
       "location": {
-        "label": "Lokasjon"
+        "label": "Basert i"
       },
       "response": {
         "label": "Svartid"
@@ -277,33 +302,35 @@
     },
     "availability": {
       "title": "Nåværende tilgjengelighet",
-      "description": "Tilgjengelig for nye prosjekter og konsultasjoner.",
-      "status": "Tilgjengelig for nye prosjekter"
+      "description": "Tar for tiden imot nye prosjekter og konsultasjoner.",
+      "status": "Tar imot nye prosjekter"
     },
     "form": {
       "name": "Navn",
-      "namePlaceholder": "Ditt fulle navn",
+      "namePlaceholder": "Ditt navn",
       "email": "E-post",
       "emailPlaceholder": "din@epost.no",
-      "company": "Firma (valgfritt)",
-      "companyPlaceholder": "Ditt firmanavn",
+      "company": "Organisasjon (valgfritt)",
+      "companyPlaceholder": "Bedrifts- eller organisasjonsnavn",
       "type": "Type henvendelse",
       "types": {
         "inquiry": "Generell henvendelse",
         "quote": "Be om tilbud",
-        "consultation": "Planlegg konsultasjon",
+        "consultation": "Bestill en samtale",
         "other": "Annet"
       },
       "message": "Melding",
-      "messagePlaceholder": "Fortell meg om prosjektet ditt eller spørsmålet...",
+      "messagePlaceholder": "Fortell meg om prosjektet ditt, krav eller spørsmål...",
       "submit": "Send melding",
-      "success": "Melding sendt!"
+      "success": "Melding sendt",
+      "privacy": "Din informasjon håndteres med streng konfidensialitet."
     }
   },
   "footer": {
     "copyright": "Alle rettigheter reservert",
-    "privacy": "Personvernerklæring",
-    "terms": "Vilkår for tjenesten",
-    "tagline": "Førsteklasses flerspråklig AI-kvalitet, lokalisering og tolketjenester"
+    "privacy": "Personvern",
+    "terms": "Vilkår",
+    "tagline": "Flerspråklig AI-kvalitet, lokalisering og tolking | Trondheim, Norge",
+    "location": "Basert i Trondheim, Norge. Jobber med kunder over hele Norden og internasjonalt."
   }
 }
