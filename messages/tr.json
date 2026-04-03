@@ -1,0 +1,31 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımda",
+    "services": "Hizmetler",
+    "credentials": "Yetkinlikler",
+    "contact": "İletişim"
+  },
+  "hero": {
+    "title": "AI Data Ops & RLHF Uzmanı",
+    "subtitle": "Çok Dilli AI Kalitesi, Yerelleştirme ve Tercümanlık",
+    "description": "Norveç merkezli bağımsız uzman"
+  },
+  "about": {
+    "title": "Hakkımda",
+    "trust": "Güven ve Kalite"
+  },
+  "services": {
+    "title": "Hizmetler",
+    "viewAll": "Tüm hizmetleri görüntüle"
+  },
+  "credentials": {
+    "title": "Yetkinlikler",
+    "viewAll": "Tüm yetkinlikleri görüntüle"
+  },
+  "footer": {
+    "copyright": "Tüm hakları saklıdır",
+    "privacy": "Gizlilik",
+    "terms": "Şartlar"
+  }
+}

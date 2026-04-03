@@ -1,0 +1,31 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "services": "Services",
+    "credentials": "Compétences",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Spécialiste AI Data Ops & RLHF",
+    "subtitle": "Qualité IA multilingue, localisation et interprétation",
+    "description": "Spécialiste indépendant basé en Norvège"
+  },
+  "about": {
+    "title": "À propos",
+    "trust": "Confiance et qualité"
+  },
+  "services": {
+    "title": "Services",
+    "viewAll": "Voir tous les services"
+  },
+  "credentials": {
+    "title": "Compétences",
+    "viewAll": "Voir toutes les qualifications"
+  },
+  "footer": {
+    "copyright": "Tous droits réservés",
+    "privacy": "Confidentialité",
+    "terms": "Conditions"
+  }
+}

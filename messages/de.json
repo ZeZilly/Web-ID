@@ -1,0 +1,31 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "about": "Über mich",
+    "services": "Dienstleistungen",
+    "credentials": "Qualifikationen",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "AI Data Ops & RLHF Spezialist",
+    "subtitle": "Mehrsprachige KI-Qualität, Lokalisierung und Dolmetschen",
+    "description": "Unabhängiger Spezialist mit Sitz in Norwegen"
+  },
+  "about": {
+    "title": "Über mich",
+    "trust": "Vertrauen und Qualität"
+  },
+  "services": {
+    "title": "Dienstleistungen",
+    "viewAll": "Alle Dienstleistungen anzeigen"
+  },
+  "credentials": {
+    "title": "Qualifikationen",
+    "viewAll": "Alle Qualifikationen anzeigen"
+  },
+  "footer": {
+    "copyright": "Alle Rechte vorbehalten",
+    "privacy": "Datenschutz",
+    "terms": "AGB"
+  }
+}

@@ -1,0 +1,131 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Scandinavian Corporate Futurism - Dark Mode Default */
+  --color-background: #0A2540;
+  --color-foreground: #F8F9FA;
+  --color-muted: #8A8D8F;
+  --color-muted-foreground: #A8ABAE;
+  --color-border: #1E3A5F;
+  --color-card: #0D2E4D;
+  --color-card-foreground: #F8F9FA;
+  --color-primary: #00E5FF;
+  --color-primary-foreground: #0A2540;
+  --color-secondary: #1E3A5F;
+  --color-secondary-foreground: #F8F9FA;
+  --color-accent: #00E5FF;
+  --color-accent-foreground: #0A2540;
+  --color-destructive: #ff4444;
+  --color-destructive-foreground: #F8F9FA;
+  --radius: 0.5rem;
+  
+  /* Aurora glow effect */
+  --glow-aurora: 0 0 20px rgba(0, 229, 255, 0.3);
+  --glow-aurora-intense: 0 0 40px rgba(0, 229, 255, 0.5);
+  
+  /* Typography */
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-mono: var(--font-space-mono), monospace;
+}
+
+* {
+  border-color: var(--color-border);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Lenis smooth scroll styles */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+/* Selection colors */
+::selection {
+  background: rgba(0, 229, 255, 0.3);
+  color: var(--color-foreground);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-muted);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary);
+}
+
+/* Aurora glow utility classes */
+.aurora-glow {
+  box-shadow: var(--glow-aurora);
+}
+
+.aurora-glow-intense {
+  box-shadow: var(--glow-aurora-intense);
+}
+
+.text-aurora-glow {
+  text-shadow: 0 0 10px rgba(0, 229, 255, 0.5);
+}
+
+/* Glass morphism effect */
+.glass {
+  background: rgba(10, 37, 64, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(30, 58, 95, 0.5);
+}
+
+/* Gradient backgrounds */
+.bg-gradient-radial {
+  background: radial-gradient(ellipse at center, var(--color-card) 0%, var(--color-background) 70%);
+}
+
+/* Neural network connection line */
+.neural-line {
+  stroke: var(--color-primary);
+  stroke-opacity: 0.3;
+  stroke-width: 1;
+}
+
+/* Language node styling */
+.language-node {
+  fill: var(--color-primary);
+  filter: drop-shadow(0 0 8px rgba(0, 229, 255, 0.6));
+}

@@ -1,0 +1,31 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "credentials": "Credentials",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "AI Data Ops & RLHF Specialist",
+    "subtitle": "Multilingual AI Quality, Localization & Interpretation",
+    "description": "Independent Specialist based in Norway"
+  },
+  "about": {
+    "title": "About",
+    "trust": "Trust and Quality"
+  },
+  "services": {
+    "title": "Services",
+    "viewAll": "View all services"
+  },
+  "credentials": {
+    "title": "Credentials",
+    "viewAll": "View all credentials"
+  },
+  "footer": {
+    "copyright": "All rights reserved",
+    "privacy": "Privacy",
+    "terms": "Terms"
+  }
+}

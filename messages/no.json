@@ -1,0 +1,31 @@
+{
+  "nav": {
+    "home": "Hjem",
+    "about": "Om meg",
+    "services": "Tjenester",
+    "credentials": "Kompetanse",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "AI Data Ops & RLHF Spesialist",
+    "subtitle": "Flerspråklig AI-kvalitet, lokalisering og tolking",
+    "description": "Uavhengig spesialist basert i Norge"
+  },
+  "about": {
+    "title": "Om meg",
+    "trust": "Tillit og kvalitet"
+  },
+  "services": {
+    "title": "Tjenester",
+    "viewAll": "Se alle tjenester"
+  },
+  "credentials": {
+    "title": "Kompetanse",
+    "viewAll": "Se alle kvalifikasjoner"
+  },
+  "footer": {
+    "copyright": "Alle rettigheter reservert",
+    "privacy": "Personvern",
+    "terms": "Vilkår"
+  }
+}
