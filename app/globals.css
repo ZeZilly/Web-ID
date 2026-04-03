@@ -129,3 +129,46 @@ html.lenis body {
   fill: var(--color-primary);
   filter: drop-shadow(0 0 8px rgba(0, 229, 255, 0.6));
 }
+
+/* Light mode theme */
+html.light {
+  --color-background: #F8F9FA;
+  --color-foreground: #0A2540;
+  --color-muted: #6B7280;
+  --color-muted-foreground: #4B5563;
+  --color-border: #E5E7EB;
+  --color-card: #FFFFFF;
+  --color-card-foreground: #0A2540;
+  --color-primary: #0091B2;
+  --color-primary-foreground: #FFFFFF;
+  --color-secondary: #F3F4F6;
+  --color-secondary-foreground: #0A2540;
+  --color-accent: #0091B2;
+  --color-accent-foreground: #FFFFFF;
+}
+
+html.light body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+}
+
+html.light .glass {
+  background: rgba(255, 255, 255, 0.8);
+  border-color: rgba(229, 231, 235, 0.7);
+}
+
+html.light ::selection {
+  background: rgba(0, 145, 178, 0.2);
+}
+
+html.light ::-webkit-scrollbar-track {
+  background: var(--color-background);
+}
+
+html.light ::-webkit-scrollbar-thumb {
+  background: #D1D5DB;
+}
+
+html.light ::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary);
+}

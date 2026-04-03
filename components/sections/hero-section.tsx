@@ -61,11 +61,20 @@ export default function HeroSection() {
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
           <button
-            onClick={handleScrollToAbout}
-            className="group flex items-center gap-2 px-6 py-3 rounded-lg bg-aurora text-primary-foreground font-medium transition-all duration-300 hover:shadow-lg hover:shadow-aurora/25"
+            onClick={() => {
+              const element = document.querySelector("#contact");
+              if (element) element.scrollIntoView({ behavior: "smooth" });
+            }}
+            className="group flex items-center gap-2 px-8 py-4 rounded-lg bg-primary text-primary-foreground font-medium transition-all duration-300 hover:shadow-lg hover:shadow-primary/25"
           >
-            Explore
+            {t("cta.primary")}
             <ArrowDown className="h-4 w-4 transition-transform group-hover:translate-y-1" />
+          </button>
+          <button
+            onClick={handleScrollToAbout}
+            className="group flex items-center gap-2 px-8 py-4 rounded-lg border border-border/50 bg-card/30 text-foreground font-medium transition-all duration-300 hover:border-primary/50 hover:bg-card/50"
+          >
+            {t("cta.secondary")}
           </button>
         </motion.div>
       </div>

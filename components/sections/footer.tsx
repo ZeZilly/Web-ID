@@ -8,77 +8,99 @@ export default function Footer() {
   const t = useTranslations("footer");
   const currentYear = new Date().getFullYear();
 
+  const handleNavClick = (href: string) => {
+    const element = document.querySelector(href);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
-    <footer id="contact" className="relative py-20 border-t border-border/30">
+    <footer className="relative py-16 lg:py-20 border-t border-border/30">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="grid md:grid-cols-3 gap-12 mb-16"
+          className="grid md:grid-cols-4 gap-12 mb-12"
         >
           {/* Brand */}
-          <div>
+          <div className="md:col-span-2">
             <div className="flex items-center gap-3 mb-4">
-              <div className="h-10 w-10 rounded-lg border border-aurora/30 flex items-center justify-center">
-                <span className="font-mono text-sm font-bold text-aurora">AI</span>
+              <div className="h-10 w-10 rounded-lg border border-primary/30 flex items-center justify-center">
+                <span className="font-mono text-sm font-bold text-primary">AI</span>
               </div>
               <div>
-                <p className="text-sm font-semibold text-foreground">Data Ops</p>
-                <p className="text-xs text-muted-foreground">RLHF Specialist</p>
+                <p className="text-sm font-semibold text-foreground">multilingual.no</p>
+                <p className="text-xs text-muted-foreground">AI Data Ops & RLHF Specialist</p>
               </div>
             </div>
-            <p className="text-sm text-muted-foreground max-w-xs">
-              Independent AI Data Operations & RLHF Specialist based in Norway
+            <p className="text-sm text-muted-foreground max-w-md mb-6">
+              {t("tagline")}
             </p>
-          </div>
-
-          {/* Contact */}
-          <div>
-            <h4 className="text-sm font-semibold text-foreground mb-4 uppercase tracking-wider">
-              Contact
-            </h4>
-            <div className="space-y-3">
+            <div className="flex items-center gap-4">
               <a
-                href="mailto:contact@example.com"
-                className="flex items-center gap-3 text-sm text-muted-foreground hover:text-aurora transition-colors"
+                href="mailto:contact@multilingual.no"
+                className="p-2 rounded-lg border border-border/50 bg-card/30 text-muted-foreground hover:text-primary hover:border-primary/30 transition-all"
+                aria-label="Email"
               >
-                <Mail className="h-4 w-4" />
-                contact@example.com
+                <Mail className="h-5 w-5" />
               </a>
               <a
                 href="#"
-                className="flex items-center gap-3 text-sm text-muted-foreground hover:text-aurora transition-colors"
+                className="p-2 rounded-lg border border-border/50 bg-card/30 text-muted-foreground hover:text-primary hover:border-primary/30 transition-all"
+                aria-label="LinkedIn"
               >
-                <Linkedin className="h-4 w-4" />
-                LinkedIn
+                <Linkedin className="h-5 w-5" />
               </a>
-              <div className="flex items-center gap-3 text-sm text-muted-foreground">
-                <MapPin className="h-4 w-4" />
-                Norway
-              </div>
             </div>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-sm font-semibold text-foreground mb-4 uppercase tracking-wider">
-              Legal
+            <h4 className="text-sm font-semibold text-foreground mb-4">
+              Navigation
+            </h4>
+            <nav className="space-y-3">
+              {[
+                { label: "About", href: "#about" },
+                { label: "Services", href: "#services" },
+                { label: "Credentials", href: "#credentials" },
+                { label: "Contact", href: "#contact" },
+              ].map((link) => (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleNavClick(link.href);
+                  }}
+                  className="block text-sm text-muted-foreground hover:text-primary transition-colors"
+                >
+                  {link.label}
+                </a>
+              ))}
+            </nav>
+          </div>
+
+          {/* Contact Info */}
+          <div>
+            <h4 className="text-sm font-semibold text-foreground mb-4">
+              Contact
             </h4>
             <div className="space-y-3">
               <a
-                href="#"
-                className="block text-sm text-muted-foreground hover:text-aurora transition-colors"
+                href="mailto:contact@multilingual.no"
+                className="flex items-center gap-3 text-sm text-muted-foreground hover:text-primary transition-colors"
               >
-                {t("privacy")}
+                <Mail className="h-4 w-4 shrink-0" />
+                contact@multilingual.no
               </a>
-              <a
-                href="#"
-                className="block text-sm text-muted-foreground hover:text-aurora transition-colors"
-              >
-                {t("terms")}
-              </a>
+              <div className="flex items-center gap-3 text-sm text-muted-foreground">
+                <MapPin className="h-4 w-4 shrink-0" />
+                Norway
+              </div>
             </div>
           </div>
         </motion.div>
@@ -86,13 +108,21 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="pt-8 border-t border-border/30 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-muted-foreground">
-            &copy; {currentYear} AI Data Ops. {t("copyright")}.
+            &copy; {currentYear} multilingual.no. {t("copyright")}.
           </p>
-          <div className="flex items-center gap-4">
-            <span className="text-xs text-muted-foreground">
-              Built with precision
-            </span>
-            <span className="h-1 w-1 rounded-full bg-aurora" />
+          <div className="flex items-center gap-6">
+            <a
+              href="#"
+              className="text-xs text-muted-foreground hover:text-primary transition-colors"
+            >
+              {t("privacy")}
+            </a>
+            <a
+              href="#"
+              className="text-xs text-muted-foreground hover:text-primary transition-colors"
+            >
+              {t("terms")}
+            </a>
           </div>
         </div>
       </div>

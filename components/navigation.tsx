@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { useTranslations } from "next-intl";
 import LanguageSwitcher from "./language-switcher";
+import ThemeToggle from "./theme-toggle";
 import { type Locale } from "@/i18n/config";
 import { cn } from "@/lib/utils";
 
@@ -13,10 +14,11 @@ interface NavigationProps {
 }
 
 const navItems = [
-  { key: "home", href: "#hero" },
   { key: "about", href: "#about" },
   { key: "services", href: "#services" },
   { key: "credentials", href: "#credentials" },
+  { key: "languages", href: "#languages" },
+  { key: "faq", href: "#faq" },
   { key: "contact", href: "#contact" },
 ];
 
@@ -88,7 +90,8 @@ export default function Navigation({ locale }: NavigationProps) {
           </div>
 
           {/* Right side */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3">
+            <ThemeToggle />
             <LanguageSwitcher currentLocale={locale} />
 
             {/* Mobile menu button */}
