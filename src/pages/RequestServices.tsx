@@ -7,19 +7,23 @@ import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 import { db } from "../lib/firebase";
 
 const formSchema = z.object({
-  fullName: z.string().min(2, "Full name is required").max(100),
-  company: z.string().max(150),
-  email: z.string().email("Invalid email address").max(200),
-  projectTitle: z.string().min(2, "Project title is required").max(200),
-  description: z.string().max(5000),
+  fullName: z.string().trim().min(2, "Full name is required").max(100),
+  company: z.string().trim().max(150),
+  email: z.string().trim().email("Invalid email address").max(200),
+  projectTitle: z.string().trim().min(2, "Project title is required").max(200),
+  description: z.string().trim().max(5000),
   budget: z.string().max(50),
   contentType: z.string().max(50),
   estimatedWords: z.coerce.number().optional().default(0),
   sourceLanguage: z.string().max(50),
-  targetLanguages: z.string().max(500),
+  targetLanguages: z.string().trim().max(500),
   services: z.array(z.string()).max(10),
   preferredStartDate: z.string().max(50),
   deliveryDeadline: z.string().max(50),
+  // Honeypot field: bots tend to autofill; legitimate users leave it empty.
+  // This field is validated client-side only and stripped before submission
+  // (the Firestore security rules require exactly 14 payload keys).
+  website: z.string().max(0, "Bot detected").optional().default(""),
 });
 
 type FormData = z.infer<typeof formSchema>;
@@ -49,22 +53,34 @@ export default function RequestServices() {
       services: [],
       preferredStartDate: "",
       deliveryDeadline: "",
+      website: "",
     },
   });
 
   const onSubmit = async (data: FormData) => {
+    // Silent drop on honeypot hit to avoid signaling detection to bots.
+    if (data.website && data.website.length > 0) {
+      setSubmitSuccess(true);
+      window.scrollTo(0, 0);
+      return;
+    }
+
     setIsSubmitting(true);
     setSubmitError("");
     try {
+      // Strip the honeypot; Firestore rules require exactly 14 keys.
+      const { website: _honeypot, ...payload } = data;
       await addDoc(collection(db, "quoteRequests"), {
-        ...data,
+        ...payload,
         createdAt: serverTimestamp(),
       });
       setSubmitSuccess(true);
       window.scrollTo(0, 0);
     } catch (err) {
       console.error("Firebase Error: ", err);
-      setSubmitError("An error occurred while submitting your request. Please try again.");
+      setSubmitError(
+        "We couldn't submit your request. Please verify your connection and try again, or email support@multilingual.no.",
+      );
     } finally {
       setIsSubmitting(false);
     }
@@ -109,11 +125,30 @@ export default function RequestServices() {
         {/* Form Area */}
         <div className="lg:col-span-8">
           {submitError && (
-            <div className="mb-6 p-4 bg-error/10 border border-error/20 rounded-md text-error text-sm">
+            <div
+              role="alert"
+              aria-live="assertive"
+              className="mb-6 p-4 bg-error/10 border border-error/20 rounded-md text-error text-sm"
+            >
               {submitError}
             </div>
           )}
-          <form className="space-y-lg" onSubmit={handleSubmit(onSubmit)}>
+          <form className="space-y-lg" onSubmit={handleSubmit(onSubmit)} noValidate>
+            {/* Honeypot: visually and programmatically hidden from real users,
+                but visible to most spam bots that autofill every input. */}
+            <div
+              aria-hidden="true"
+              style={{ position: "absolute", left: "-10000px", top: "auto", width: "1px", height: "1px", overflow: "hidden" }}
+            >
+              <label htmlFor="website-url">Leave this field empty</label>
+              <input
+                {...register("website")}
+                id="website-url"
+                type="text"
+                tabIndex={-1}
+                autoComplete="off"
+              />
+            </div>
             {/* Section 1: Contact Information */}
             <div className="bg-surface-container-lowest border border-outline-variant rounded-lg p-lg">
               <div className="flex items-center gap-xs mb-md border-b border-outline-variant pb-sm">
@@ -129,11 +164,19 @@ export default function RequestServices() {
                   </label>
                   <input
                     {...register("fullName")}
+                    id="fullName"
+                    aria-invalid={errors.fullName ? "true" : "false"}
+                    aria-describedby={errors.fullName ? "fullName-error" : undefined}
+                    autoComplete="name"
                     className="w-full bg-surface-container-lowest border border-outline-variant rounded-DEFAULT px-sm py-xs font-body-md text-on-surface focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors"
                     placeholder="Jane Doe"
                     type="text"
                   />
-                  {errors.fullName && <span className="text-error text-xs mt-1 block">{errors.fullName.message}</span>}
+                  {errors.fullName && (
+                    <span id="fullName-error" role="alert" className="text-error text-xs mt-1 block">
+                      {errors.fullName.message}
+                    </span>
+                  )}
                 </div>
                 <div>
                   <label className="block font-label-caps text-[12px] uppercase font-semibold text-on-surface-variant mb-xs">
@@ -152,11 +195,20 @@ export default function RequestServices() {
                   </label>
                   <input
                     {...register("email")}
+                    id="email"
+                    aria-invalid={errors.email ? "true" : "false"}
+                    aria-describedby={errors.email ? "email-error" : undefined}
+                    autoComplete="email"
+                    inputMode="email"
                     className="w-full bg-surface-container-lowest border border-outline-variant rounded-DEFAULT px-sm py-xs font-body-md text-on-surface focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors"
                     placeholder="jane@acmecorp.com"
                     type="email"
                   />
-                  {errors.email && <span className="text-error text-xs mt-1 block">{errors.email.message}</span>}
+                  {errors.email && (
+                    <span id="email-error" role="alert" className="text-error text-xs mt-1 block">
+                      {errors.email.message}
+                    </span>
+                  )}
                 </div>
               </div>
             </div>
@@ -176,11 +228,18 @@ export default function RequestServices() {
                   </label>
                   <input
                     {...register("projectTitle")}
+                    id="projectTitle"
+                    aria-invalid={errors.projectTitle ? "true" : "false"}
+                    aria-describedby={errors.projectTitle ? "projectTitle-error" : undefined}
                     className="w-full bg-surface-container-lowest border border-outline-variant rounded-DEFAULT px-sm py-xs font-body-md text-on-surface focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors"
                     placeholder="e.g., Q3 Marketing Campaign Localization"
                     type="text"
                   />
-                  {errors.projectTitle && <span className="text-error text-xs mt-1 block">{errors.projectTitle.message}</span>}
+                  {errors.projectTitle && (
+                    <span id="projectTitle-error" role="alert" className="text-error text-xs mt-1 block">
+                      {errors.projectTitle.message}
+                    </span>
+                  )}
                 </div>
                 <div>
                   <label className="block font-label-caps text-[12px] uppercase font-semibold text-on-surface-variant mb-xs">
@@ -454,10 +513,10 @@ export default function RequestServices() {
                 Need immediate assistance?
               </p>
               <a
-                href="mailto:support@linguistai.com"
+                href="mailto:support@multilingual.no"
                 className="font-body-md text-primary font-medium hover:underline flex items-center gap-xs"
               >
-                <Mail size={16} /> support@linguistai.com
+                <Mail size={16} /> support@multilingual.no
               </a>
             </div>
           </div>
