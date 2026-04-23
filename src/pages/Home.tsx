@@ -10,7 +10,25 @@ import {
   Sliders,
   ClipboardCheck,
   ArrowUpRight,
+  Languages,
 } from "lucide-react";
+
+const localizedSamples: Array<{
+  locale: string;
+  lang: string;
+  dir?: "ltr" | "rtl";
+  flag: string;
+  headline: string;
+}> = [
+  { locale: "Norsk bokmål", lang: "nb", flag: "NO", headline: "Global rekkevidde. Lokal resonans." },
+  { locale: "Svenska", lang: "sv", flag: "SE", headline: "Global räckvidd. Lokal resonans." },
+  { locale: "Dansk", lang: "da", flag: "DK", headline: "Global rækkevidde. Lokal resonans." },
+  { locale: "Suomi", lang: "fi", flag: "FI", headline: "Globaali ulottuvuus. Paikallinen resonanssi." },
+  { locale: "Deutsch", lang: "de", flag: "DE", headline: "Globale Reichweite. Lokale Resonanz." },
+  { locale: "Français", lang: "fr", flag: "FR", headline: "Portée mondiale. Résonance locale." },
+  { locale: "Nederlands", lang: "nl", flag: "NL", headline: "Mondiaal bereik. Lokale resonantie." },
+  { locale: "Español", lang: "es", flag: "ES", headline: "Alcance global. Resonancia local." },
+];
 
 export default function Home() {
   return (
@@ -25,15 +43,16 @@ export default function Home() {
         <span className="inline-flex items-center gap-2 bg-surface-container-low border border-surface-container-highest rounded-full px-sm py-xs font-label-caps text-[12px] text-on-surface-variant uppercase tracking-wider font-semibold">
           Based in Norway 🇳🇴 | Serving Global Brands
         </span>
-        <h1 className="font-h1 text-[48px] leading-[1.1] tracking-[-0.02em] font-semibold text-on-background max-w-3xl">
-          Global Reach.
+        <h1 className="font-h1 text-[48px] leading-[1.1] tracking-[-0.02em] font-semibold text-on-background max-w-3xl text-balance">
+          Multi-Agent AI Localization.
           <br />
-          Local Resonance.
+          Engineered for Nordic Precision.
         </h1>
-        <p className="font-body-lg text-[18px] leading-[1.6] text-on-surface-variant max-w-2xl">
-          We combine enterprise-grade AI with expert human oversight to localize
-          your brand for the Nordic market and beyond. Faster, smarter, and
-          culturally flawless.
+        <p className="font-body-lg text-[18px] leading-[1.6] text-on-surface-variant max-w-2xl text-pretty">
+          multilingual.no orchestrates specialized AI agents alongside expert
+          human linguists to deliver culturally flawless localization across
+          Norwegian, Nordic, and global markets&mdash;with rubric-based
+          evaluation and enterprise-grade governance at every step.
         </p>
         <div className="flex flex-col sm:flex-row gap-sm mt-xs">
           <Link
@@ -284,6 +303,68 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Multilingual Coverage Section */}
+      <section
+        className="bg-surface-container-low py-xl border-y border-surface-container-highest"
+        id="languages"
+        aria-labelledby="languages-heading"
+      >
+        <div className="max-w-[1200px] mx-auto px-6">
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-md mb-xl">
+            <div className="max-w-2xl">
+              <div className="flex items-center gap-2 text-primary font-label-caps text-[12px] uppercase tracking-wider font-semibold mb-xs">
+                <Languages size={16} aria-hidden="true" />
+                Multilingual Coverage
+              </div>
+              <h2
+                id="languages-heading"
+                className="font-h2 text-[30px] leading-[1.2] tracking-[-0.01em] font-semibold text-on-background mb-sm text-balance"
+              >
+                One brand voice, every target locale.
+              </h2>
+              <p className="font-body-md text-on-surface-variant text-pretty">
+                Our agentic localization pipeline preserves tone, terminology, and
+                intent across Nordic, European, and global languages&mdash;validated
+                by native linguists and measured against explicit quality rubrics.
+              </p>
+            </div>
+            <p className="font-label-caps text-[12px] uppercase tracking-wider font-semibold text-on-surface-variant">
+              Sample headline &ldquo;Global Reach. Local Resonance.&rdquo;
+            </p>
+          </div>
+          <ul
+            role="list"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter"
+          >
+            {localizedSamples.map((sample) => (
+              <li
+                key={sample.lang}
+                className="bg-surface border border-surface-container-highest rounded-lg p-md hover:-translate-y-1 transition-transform duration-200"
+              >
+                <div className="flex items-center justify-between mb-sm">
+                  <span className="font-label-caps text-[12px] uppercase tracking-wider font-semibold text-on-surface-variant">
+                    {sample.locale}
+                  </span>
+                  <span
+                    className="font-mono text-[11px] tracking-wider text-on-surface-variant bg-surface-container px-2 py-1 rounded-DEFAULT"
+                    aria-label={`Language code ${sample.lang}`}
+                  >
+                    {sample.lang.toUpperCase()}-{sample.flag}
+                  </span>
+                </div>
+                <p
+                  lang={sample.lang}
+                  dir={sample.dir ?? "ltr"}
+                  className="font-h3 text-[20px] leading-[1.3] tracking-[-0.01em] font-semibold text-on-background text-balance"
+                >
+                  {sample.headline}
+                </p>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
