@@ -4,11 +4,11 @@
 export const personalInfo = {
   name: "Mehmet Zeki Oguz",
   initials: "MZO",
-  email: "mzogz@hotmail.com",
+  email: "zeki@multilingual.no",
   phone: "+47 45546080",
   location: "Trondheim, Norway",
-  linkedin: "https://linkedin.com/in/zekiogz",
-  github: "https://github.com/zekiogz",
+  linkedin: "https://www.linkedin.com/in/zekiogz/",
+  github: "https://github.com/ZeZilly",
   website: "cv.multilingual.no",
 };
 
@@ -178,14 +178,14 @@ export const translations = {
           status: "Prototype · Ongoing",
           desc: "Natural-language-first platform concept enabling non-technical users to configure, deploy and operate multi-step agent workflows with guided setup and operational oversight.",
           tags: ["Agents", "NLP", "Orchestration", "UX"],
-          link: "https://github.com/zekiogz",
+          link: "https://github.com/ZeZilly",
         },
         {
           name: "Multi-Model Evaluation Harness",
           status: "Research · 2025",
           desc: "Comparative testing framework probing prompt adherence, reliability and failure modes across free-tier and budget-grade LLMs under realistic workloads.",
           tags: ["Evaluation", "LLMs", "Benchmarking"],
-          link: "https://github.com/zekiogz",
+          link: "https://github.com/ZeZilly",
         },
         {
           name: "Multilingual.no — Language Services Hub",
@@ -384,14 +384,14 @@ export const translations = {
           status: "Prototype · Pågående",
           desc: "Plattformkonsept drevet av naturlig språk som lar ikke-tekniske brukere konfigurere og drifte flertrinns agent-arbeidsflyter.",
           tags: ["Agenter", "NLP", "Orkestrering", "UX"],
-          link: "https://github.com/zekiogz",
+          link: "https://github.com/ZeZilly",
         },
         {
           name: "Fler-modell evalueringsrammeverk",
           status: "Forskning · 2025",
           desc: "Sammenlignende testrammeverk som undersøker prompt-etterlevelse, pålitelighet og feilmodi på tvers av budsjett-LLM-er.",
           tags: ["Evaluering", "LLM-er", "Benchmark"],
-          link: "https://github.com/zekiogz",
+          link: "https://github.com/ZeZilly",
         },
         {
           name: "Multilingual.no — Språktjenester",
@@ -590,14 +590,14 @@ export const translations = {
           status: "Prototip · Devam ediyor",
           desc: "Teknik olmayan kullanıcıların çok adımlı ajan iş akışlarını yapılandırıp dağıtmasını sağlayan doğal dil odaklı platform konsepti.",
           tags: ["Ajanlar", "NLP", "Orkestrasyon", "UX"],
-          link: "https://github.com/zekiogz",
+          link: "https://github.com/ZeZilly",
         },
         {
           name: "Çoklu Model Değerlendirme Çatısı",
           status: "Araştırma · 2025",
           desc: "Bütçe LLM'lerinde prompt uyumu, güvenilirlik ve hata modlarını inceleyen karşılaştırmalı test çatısı.",
           tags: ["Değerlendirme", "LLM", "Benchmark"],
-          link: "https://github.com/zekiogz",
+          link: "https://github.com/ZeZilly",
         },
         {
           name: "Multilingual.no — Dil Hizmetleri Merkezi",
