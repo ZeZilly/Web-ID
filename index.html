@@ -12,16 +12,29 @@
     />
     <meta
       name="keywords"
-      content="multi-agent AI orchestration, agentic localization, AI localization platform, LLM evaluation, Nordic localization, Norwegian translation services, multilingual AI agents, enterprise localization, human-in-the-loop translation, agentic translation workflows, AI translation quality, rubric-based evaluation"
+      content="multi-agent AI orchestration, agentic localization, AI localization platform, LLM evaluation, Nordic localization, Norwegian translation services, Swedish translation, Danish translation, Finnish translation, Icelandic translation, German localization, French localization, Dutch localization, Spanish localization, multilingual AI agents, enterprise localization, human-in-the-loop translation, agentic translation workflows, AI translation quality, rubric-based evaluation, LLM-as-a-judge, translation memory, terminology management, transcreation, Nordic market entry, Scandinavian localization"
     />
     <meta name="author" content="multilingual.no" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
     <meta name="googlebot" content="index, follow" />
 
     <link rel="canonical" href="https://multilingual.no/" />
+
+    <!-- hreflang alternates: signals full language coverage to search engines
+         without exposing any visible UI changes. -->
+    <link rel="alternate" href="https://multilingual.no/" hreflang="x-default" />
     <link rel="alternate" href="https://multilingual.no/" hreflang="en" />
     <link rel="alternate" href="https://multilingual.no/" hreflang="nb-NO" />
-    <link rel="alternate" href="https://multilingual.no/" hreflang="x-default" />
+    <link rel="alternate" href="https://multilingual.no/" hreflang="nn-NO" />
+    <link rel="alternate" href="https://multilingual.no/" hreflang="sv-SE" />
+    <link rel="alternate" href="https://multilingual.no/" hreflang="da-DK" />
+    <link rel="alternate" href="https://multilingual.no/" hreflang="fi-FI" />
+    <link rel="alternate" href="https://multilingual.no/" hreflang="is-IS" />
+    <link rel="alternate" href="https://multilingual.no/" hreflang="de-DE" />
+    <link rel="alternate" href="https://multilingual.no/" hreflang="fr-FR" />
+    <link rel="alternate" href="https://multilingual.no/" hreflang="es-ES" />
+    <link rel="alternate" href="https://multilingual.no/" hreflang="it-IT" />
+    <link rel="alternate" href="https://multilingual.no/" hreflang="nl-NL" />
 
     <!-- Open Graph -->
     <meta property="og:site_name" content="multilingual.no" />
@@ -36,6 +49,16 @@
     <meta property="og:image:alt" content="multilingual.no hybrid AI plus human localization engine" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:locale:alternate" content="nb_NO" />
+    <meta property="og:locale:alternate" content="nn_NO" />
+    <meta property="og:locale:alternate" content="sv_SE" />
+    <meta property="og:locale:alternate" content="da_DK" />
+    <meta property="og:locale:alternate" content="fi_FI" />
+    <meta property="og:locale:alternate" content="is_IS" />
+    <meta property="og:locale:alternate" content="de_DE" />
+    <meta property="og:locale:alternate" content="fr_FR" />
+    <meta property="og:locale:alternate" content="es_ES" />
+    <meta property="og:locale:alternate" content="it_IT" />
+    <meta property="og:locale:alternate" content="nl_NL" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -68,12 +91,39 @@
           "@type": "PostalAddress",
           "addressCountry": "NO"
         },
-        "areaServed": ["Norway", "Sweden", "Denmark", "Finland", "Iceland", "Europe", "Worldwide"],
+        "areaServed": [
+          "Norway",
+          "Sweden",
+          "Denmark",
+          "Finland",
+          "Iceland",
+          "Germany",
+          "France",
+          "Netherlands",
+          "Spain",
+          "Italy",
+          "Europe",
+          "Worldwide"
+        ],
+        "knowsLanguage": [
+          { "@type": "Language", "name": "English", "alternateName": "en" },
+          { "@type": "Language", "name": "Norwegian Bokmål", "alternateName": "nb" },
+          { "@type": "Language", "name": "Norwegian Nynorsk", "alternateName": "nn" },
+          { "@type": "Language", "name": "Swedish", "alternateName": "sv" },
+          { "@type": "Language", "name": "Danish", "alternateName": "da" },
+          { "@type": "Language", "name": "Finnish", "alternateName": "fi" },
+          { "@type": "Language", "name": "Icelandic", "alternateName": "is" },
+          { "@type": "Language", "name": "German", "alternateName": "de" },
+          { "@type": "Language", "name": "French", "alternateName": "fr" },
+          { "@type": "Language", "name": "Spanish", "alternateName": "es" },
+          { "@type": "Language", "name": "Italian", "alternateName": "it" },
+          { "@type": "Language", "name": "Dutch", "alternateName": "nl" }
+        ],
         "sameAs": []
       }
     </script>
 
-    <!-- Structured data: Professional service -->
+    <!-- Structured data: Professional service with language and service catalog -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -85,22 +135,44 @@
           "Multi-agent translation orchestration",
           "LLM evaluation and quality assurance",
           "Nordic market entry localization",
-          "Brand voice adaptation"
+          "Brand voice adaptation",
+          "Human-in-the-loop translation review",
+          "Terminology and translation memory management",
+          "Transcreation and cultural adaptation"
         ],
         "knowsLanguage": [
-          "en",
-          "nb",
-          "nn",
-          "sv",
-          "da",
-          "fi",
-          "is",
-          "de",
-          "fr",
-          "es",
-          "it",
-          "nl"
-        ]
+          "en", "nb", "nn", "sv", "da", "fi", "is", "de", "fr", "es", "it", "nl"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Localization services",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Multi-agent AI localization",
+                "description": "Specialized AI agents collaborate on translation, terminology, and style, validated against explicit quality rubrics."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "LLM evaluation and rubric-based QA",
+                "description": "Rubric-based and LLM-as-a-judge evaluation workflows calibrated against native linguist review."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Nordic and European localization",
+                "description": "Norwegian (Bokmål and Nynorsk), Swedish, Danish, Finnish, Icelandic, German, French, Dutch, Spanish, and Italian."
+              }
+            }
+          ]
+        }
       }
     </script>
   </head>
