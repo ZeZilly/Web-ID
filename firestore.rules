@@ -1,0 +1,40 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /{document=**} {
+      allow read, write: if false;
+    }
+    
+    function isValidId(id) {
+      return id is string && id.size() > 0 && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+    
+    function incoming() {
+      return request.resource.data;
+    }
+    
+    function isValidQuoteRequest() {
+      return incoming().keys().hasAll(['fullName', 'company', 'email', 'projectTitle', 'description', 'budget', 'contentType', 'estimatedWords', 'sourceLanguage', 'targetLanguages', 'services', 'preferredStartDate', 'deliveryDeadline', 'createdAt'])
+        && incoming().keys().size() == 14
+        && incoming().fullName is string && incoming().fullName.size() <= 100
+        && incoming().company is string && incoming().company.size() <= 150
+        && incoming().email is string && incoming().email.size() <= 200 && incoming().email.matches('^[^@]+@[^@]+\\.[a-zA-Z]{2,}$')
+        && incoming().projectTitle is string && incoming().projectTitle.size() <= 200
+        && incoming().description is string && incoming().description.size() <= 5000
+        && incoming().budget is string && incoming().budget.size() <= 50
+        && incoming().contentType is string && incoming().contentType.size() <= 50
+        && incoming().estimatedWords is number
+        && incoming().sourceLanguage is string && incoming().sourceLanguage.size() <= 50
+        && incoming().targetLanguages is string && incoming().targetLanguages.size() <= 500
+        && incoming().services is list && incoming().services.size() <= 10
+        && (incoming().services.size() == 0 || incoming().services[0] is string)
+        && incoming().preferredStartDate is string && incoming().preferredStartDate.size() <= 50
+        && incoming().deliveryDeadline is string && incoming().deliveryDeadline.size() <= 50
+        && incoming().createdAt == request.time;
+    }
+
+    match /quoteRequests/{requestId} {
+      allow create: if isValidId(requestId) && isValidQuoteRequest();
+    }
+  }
+}
